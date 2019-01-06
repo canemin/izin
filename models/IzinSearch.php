@@ -17,8 +17,8 @@ class IzinSearch extends Izin
     public function rules()
     {
         return [
-            [['id', 'phone_number'], 'integer'],
-            [['starting_date', 'end_date', 'address', 'status', 'mail_address'], 'safe'],
+            [['id'], 'integer'],
+            [['starting_date', 'end_date', 'address', 'status', 'mail_address', 'phone_number'], 'safe'],
         ];
     }
 
